@@ -26,16 +26,13 @@ Markdown cells are used for body-text, and contain markdown, as defined in [GitH
 How is math handled and displayed?
 
 [Euler's identity](https://simple.wikipedia.org/wiki/Euler%27s_identity), sometimes called Euler's equation, is this equation:
-
-$$
-e^{i\pi} + 1 = 0
-$$
-
+$$e^{i\pi} + 1 = 0$$
 It features the following mathematical constants:
 
 - $\pi$, pi: $\pi \approx 3.14159$
 - $e$, Euler's Number: $e \approx 2.71828$
 - $i$, imaginary unit: $i = \sqrt{-1}$
+
 
 ## Raw NBConvert Cells Examples
 
@@ -46,7 +43,9 @@ The notebook authoring environment does not render raw cells.
 The only logic in a raw cell is the format metadata field. If defined, it specifies which nbconvert output format is the intended target for the raw cell. When outputting to any other format, the raw cell's contents will be excluded. In the default case when this value is undefined, a raw cell's contents will be included in any nbconvert output, regardless of format.
 
 <p>The notebook authoring environment does not render this raw cell.</p>
+
 <strong>Hello, World!</strong>
+
 <p>But HTML renderer or markdown renderer can render this raw cell.</p>
 
 ## Code Cells Examples
@@ -93,9 +92,9 @@ print('This is a stderr output.\n\nThis is another stderr output.', file=sys.std
 <pre style="background: #eaeef2; padding-top: 5px">
 This is a stdout output.
 </pre>
-
 <pre style="background: #fddfdd; padding-top: 5px">
 This is a stderr output.
+
 
 This is another stderr output.
 </pre>
@@ -200,7 +199,6 @@ pd.DataFrame(np.random.rand(5, 50))
 <pre style="background: #eaeef2; padding-top: 5px">
 [0. 0. 0. 0. 0. 0. 0.]
 </pre>
-
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -366,9 +364,11 @@ pd.DataFrame(np.random.rand(5, 50))
 <p>5 rows × 50 columns</p>
 </div>
 
+
 #### Error
 
 Failed execution may show an error.
+
 
 <p style="color: #303f9f;"><b>In:</b></p>
 
@@ -382,9 +382,10 @@ Failed execution may show an error.
 <pre style="background: #fddfdd; padding-top: 5px">
 ---------------------------------------------------------------------------
 ZeroDivisionError                         Traceback (most recent call last)
-Input In [34], in <cell line: 2>()
+Input In [5], in &lt;cell line: 2>()
       1 # ZeroDivisionError
 ----> 2 1 / 0
+
 
 ZeroDivisionError: division by zero</pre>
 
@@ -429,7 +430,7 @@ _ipython_canary_method_should_not_exist_
 _repr_javascript_
 </pre>
 
-<__main__.ShowMeMethods at 0x2336ce38400>
+<__main__.ShowMeMethods at 0x1e47ac0cb20>
 
 ### ReprMimebundleTest
 

@@ -178,6 +178,7 @@ class MarkdownCreator:
             background_color = Config.stderr_background
         prefix = '<pre style="background: %s; padding-top: 5px">\n' % background_color
         content = ''.join(text)
+        content = re.sub('<', '&lt;', content)
         suffix = '</pre>'
         return prefix + content + suffix
 
@@ -199,6 +200,7 @@ class MarkdownCreator:
         background_color = Config.error_background
         prefix = '<pre style="background: %s; padding-top: 5px">\n' % background_color
         content = ''.join(traceback_str)
+        content = re.sub('<', '&lt;', content)
         suffix = '</pre>'
         return prefix + content + suffix
 
@@ -317,7 +319,9 @@ class OutputsParser:
                 ensure_dir_exists(base_path)
             image_path = os.path.join(base_path, image_name)
             OutputsParser.write_image(raw_content, image_path)
-            return MarkdownCreator.create_image_block(os.path.join(Config.image_dir_name, image_name))
+            relative_path = os.path.join(Config.image_dir_name, image_name)
+            relative_path = '/'.join(os.path.split(relative_path))
+            return MarkdownCreator.create_image_block(relative_path)
 
     def to_md(self) -> List[str]:
         outputs_md = []
