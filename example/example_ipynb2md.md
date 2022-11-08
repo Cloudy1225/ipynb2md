@@ -155,7 +155,7 @@ plt.show()
 
 <p style="color: #d84315;"><b>Out:</b></p>
 
-![](example_images/image1.png)
+![](./example_images/image1.png)
 
 #### Execute Result
 
@@ -194,7 +194,7 @@ pd.DataFrame(np.random.rand(5, 50))
 [0. 0. 0. 0. 0. 0. 0.]
 </pre>
 
-![](example_images/image2.png)
+![](./example_images/image2.png)
 
 <pre style="background: #eaeef2; padding-top: 5px">
 [0. 0. 0. 0. 0. 0. 0.]
@@ -483,4 +483,4 @@ ReprPngTest()
 
 <p style="color: #d84315;"><b>Out:</b></p>
 
-![](example_images/image3.png)
+![](./example_images/image3.png)

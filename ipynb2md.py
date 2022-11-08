@@ -229,14 +229,14 @@ class MarkdownCreator:
         Parameters
         ----------
         image_path : str
-            The file path.
+            The relative path of image.
 
         Returns
         -------
         s : str
             The markdown-syntax string of created block.
         """
-        return '![](%s)' % image_path
+        return '![](./%s)' % image_path
 
 
 def ensure_dir_exists(path, mode=0o755):
