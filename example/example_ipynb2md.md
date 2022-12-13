@@ -90,14 +90,9 @@ print('This is a stderr output.\n\nThis is another stderr output.', file=sys.std
 <p style="color: #d84315;"><b>Out:</b></p>
 
 <pre style="background: #eaeef2; padding-top: 5px">
-This is a stdout output.
-</pre>
+This is a stdout output.&#xA;</pre>
 <pre style="background: #fddfdd; padding-top: 5px">
-This is a stderr output.
-
-
-This is another stderr output.
-</pre>
+This is a stderr output.&#xA;&#xA;This is another stderr output.&#xA;</pre>
 
 #### Display Data
 
@@ -190,180 +185,13 @@ pd.DataFrame(np.random.rand(5, 50))
 <p style="color: #d84315;"><b>Out:</b></p>
 
 <pre style="background: #eaeef2; padding-top: 5px">
-[0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
-[0. 0. 0. 0. 0. 0. 0.]
-</pre>
+[0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]&#xA;[0. 0. 0. 0. 0. 0. 0.]&#xA;</pre>
 
 ![](./example_images/image2.png)
 
 <pre style="background: #eaeef2; padding-top: 5px">
-[0. 0. 0. 0. 0. 0. 0.]
-</pre>
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>0</th>
-      <th>1</th>
-      <th>2</th>
-      <th>3</th>
-      <th>4</th>
-      <th>5</th>
-      <th>6</th>
-      <th>7</th>
-      <th>8</th>
-      <th>9</th>
-      <th>...</th>
-      <th>40</th>
-      <th>41</th>
-      <th>42</th>
-      <th>43</th>
-      <th>44</th>
-      <th>45</th>
-      <th>46</th>
-      <th>47</th>
-      <th>48</th>
-      <th>49</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>0.982660</td>
-      <td>0.950575</td>
-      <td>0.153592</td>
-      <td>0.443929</td>
-      <td>0.881261</td>
-      <td>0.184875</td>
-      <td>0.385677</td>
-      <td>0.323046</td>
-      <td>0.822011</td>
-      <td>0.596101</td>
-      <td>...</td>
-      <td>0.342276</td>
-      <td>0.409496</td>
-      <td>0.865824</td>
-      <td>0.750288</td>
-      <td>0.327311</td>
-      <td>0.325574</td>
-      <td>0.675342</td>
-      <td>0.262318</td>
-      <td>0.521162</td>
-      <td>0.888366</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>0.916191</td>
-      <td>0.195075</td>
-      <td>0.723849</td>
-      <td>0.632853</td>
-      <td>0.748322</td>
-      <td>0.515854</td>
-      <td>0.744937</td>
-      <td>0.120272</td>
-      <td>0.961874</td>
-      <td>0.441111</td>
-      <td>...</td>
-      <td>0.134500</td>
-      <td>0.509945</td>
-      <td>0.362977</td>
-      <td>0.594119</td>
-      <td>0.233724</td>
-      <td>0.580413</td>
-      <td>0.729554</td>
-      <td>0.407306</td>
-      <td>0.103715</td>
-      <td>0.660374</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>0.214319</td>
-      <td>0.511553</td>
-      <td>0.292303</td>
-      <td>0.777637</td>
-      <td>0.634623</td>
-      <td>0.139056</td>
-      <td>0.253148</td>
-      <td>0.945791</td>
-      <td>0.838009</td>
-      <td>0.982757</td>
-      <td>...</td>
-      <td>0.279841</td>
-      <td>0.647603</td>
-      <td>0.693227</td>
-      <td>0.299809</td>
-      <td>0.055384</td>
-      <td>0.922965</td>
-      <td>0.128182</td>
-      <td>0.374416</td>
-      <td>0.027185</td>
-      <td>0.763784</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>0.236895</td>
-      <td>0.085613</td>
-      <td>0.528804</td>
-      <td>0.617442</td>
-      <td>0.338415</td>
-      <td>0.951204</td>
-      <td>0.065066</td>
-      <td>0.378591</td>
-      <td>0.150739</td>
-      <td>0.283930</td>
-      <td>...</td>
-      <td>0.760430</td>
-      <td>0.895369</td>
-      <td>0.537353</td>
-      <td>0.950264</td>
-      <td>0.439080</td>
-      <td>0.142069</td>
-      <td>0.258249</td>
-      <td>0.139753</td>
-      <td>0.443179</td>
-      <td>0.633011</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>0.144268</td>
-      <td>0.804505</td>
-      <td>0.229383</td>
-      <td>0.394636</td>
-      <td>0.752593</td>
-      <td>0.646893</td>
-      <td>0.183480</td>
-      <td>0.919716</td>
-      <td>0.362999</td>
-      <td>0.541700</td>
-      <td>...</td>
-      <td>0.559708</td>
-      <td>0.147414</td>
-      <td>0.930116</td>
-      <td>0.838914</td>
-      <td>0.500119</td>
-      <td>0.567617</td>
-      <td>0.747650</td>
-      <td>0.586862</td>
-      <td>0.927173</td>
-      <td>0.085880</td>
-    </tr>
-  </tbody>
-</table>
-<p>5 rows × 50 columns</p>
-</div>
-
+[0. 0. 0. 0. 0. 0. 0.]&#xA;</pre>
+<div>&#xA;<style scoped>&#xA;    .dataframe tbody tr th:only-of-type {&#xA;        vertical-align: middle;&#xA;    }&#xA;&#xA;    .dataframe tbody tr th {&#xA;        vertical-align: top;&#xA;    }&#xA;&#xA;    .dataframe thead th {&#xA;        text-align: right;&#xA;    }&#xA;</style>&#xA;<table border="1" class="dataframe">&#xA;  <thead>&#xA;    <tr style="text-align: right;">&#xA;      <th></th>&#xA;      <th>0</th>&#xA;      <th>1</th>&#xA;      <th>2</th>&#xA;      <th>3</th>&#xA;      <th>4</th>&#xA;      <th>5</th>&#xA;      <th>6</th>&#xA;      <th>7</th>&#xA;      <th>8</th>&#xA;      <th>9</th>&#xA;      <th>...</th>&#xA;      <th>40</th>&#xA;      <th>41</th>&#xA;      <th>42</th>&#xA;      <th>43</th>&#xA;      <th>44</th>&#xA;      <th>45</th>&#xA;      <th>46</th>&#xA;      <th>47</th>&#xA;      <th>48</th>&#xA;      <th>49</th>&#xA;    </tr>&#xA;  </thead>&#xA;  <tbody>&#xA;    <tr>&#xA;      <th>0</th>&#xA;      <td>0.982660</td>&#xA;      <td>0.950575</td>&#xA;      <td>0.153592</td>&#xA;      <td>0.443929</td>&#xA;      <td>0.881261</td>&#xA;      <td>0.184875</td>&#xA;      <td>0.385677</td>&#xA;      <td>0.323046</td>&#xA;      <td>0.822011</td>&#xA;      <td>0.596101</td>&#xA;      <td>...</td>&#xA;      <td>0.342276</td>&#xA;      <td>0.409496</td>&#xA;      <td>0.865824</td>&#xA;      <td>0.750288</td>&#xA;      <td>0.327311</td>&#xA;      <td>0.325574</td>&#xA;      <td>0.675342</td>&#xA;      <td>0.262318</td>&#xA;      <td>0.521162</td>&#xA;      <td>0.888366</td>&#xA;    </tr>&#xA;    <tr>&#xA;      <th>1</th>&#xA;      <td>0.916191</td>&#xA;      <td>0.195075</td>&#xA;      <td>0.723849</td>&#xA;      <td>0.632853</td>&#xA;      <td>0.748322</td>&#xA;      <td>0.515854</td>&#xA;      <td>0.744937</td>&#xA;      <td>0.120272</td>&#xA;      <td>0.961874</td>&#xA;      <td>0.441111</td>&#xA;      <td>...</td>&#xA;      <td>0.134500</td>&#xA;      <td>0.509945</td>&#xA;      <td>0.362977</td>&#xA;      <td>0.594119</td>&#xA;      <td>0.233724</td>&#xA;      <td>0.580413</td>&#xA;      <td>0.729554</td>&#xA;      <td>0.407306</td>&#xA;      <td>0.103715</td>&#xA;      <td>0.660374</td>&#xA;    </tr>&#xA;    <tr>&#xA;      <th>2</th>&#xA;      <td>0.214319</td>&#xA;      <td>0.511553</td>&#xA;      <td>0.292303</td>&#xA;      <td>0.777637</td>&#xA;      <td>0.634623</td>&#xA;      <td>0.139056</td>&#xA;      <td>0.253148</td>&#xA;      <td>0.945791</td>&#xA;      <td>0.838009</td>&#xA;      <td>0.982757</td>&#xA;      <td>...</td>&#xA;      <td>0.279841</td>&#xA;      <td>0.647603</td>&#xA;      <td>0.693227</td>&#xA;      <td>0.299809</td>&#xA;      <td>0.055384</td>&#xA;      <td>0.922965</td>&#xA;      <td>0.128182</td>&#xA;      <td>0.374416</td>&#xA;      <td>0.027185</td>&#xA;      <td>0.763784</td>&#xA;    </tr>&#xA;    <tr>&#xA;      <th>3</th>&#xA;      <td>0.236895</td>&#xA;      <td>0.085613</td>&#xA;      <td>0.528804</td>&#xA;      <td>0.617442</td>&#xA;      <td>0.338415</td>&#xA;      <td>0.951204</td>&#xA;      <td>0.065066</td>&#xA;      <td>0.378591</td>&#xA;      <td>0.150739</td>&#xA;      <td>0.283930</td>&#xA;      <td>...</td>&#xA;      <td>0.760430</td>&#xA;      <td>0.895369</td>&#xA;      <td>0.537353</td>&#xA;      <td>0.950264</td>&#xA;      <td>0.439080</td>&#xA;      <td>0.142069</td>&#xA;      <td>0.258249</td>&#xA;      <td>0.139753</td>&#xA;      <td>0.443179</td>&#xA;      <td>0.633011</td>&#xA;    </tr>&#xA;    <tr>&#xA;      <th>4</th>&#xA;      <td>0.144268</td>&#xA;      <td>0.804505</td>&#xA;      <td>0.229383</td>&#xA;      <td>0.394636</td>&#xA;      <td>0.752593</td>&#xA;      <td>0.646893</td>&#xA;      <td>0.183480</td>&#xA;      <td>0.919716</td>&#xA;      <td>0.362999</td>&#xA;      <td>0.541700</td>&#xA;      <td>...</td>&#xA;      <td>0.559708</td>&#xA;      <td>0.147414</td>&#xA;      <td>0.930116</td>&#xA;      <td>0.838914</td>&#xA;      <td>0.500119</td>&#xA;      <td>0.567617</td>&#xA;      <td>0.747650</td>&#xA;      <td>0.586862</td>&#xA;      <td>0.927173</td>&#xA;      <td>0.085880</td>&#xA;    </tr>&#xA;  </tbody>&#xA;</table>&#xA;<p>5 rows × 50 columns</p>&#xA;</div>
 
 #### Error
 
@@ -380,14 +208,7 @@ Failed execution may show an error.
 <p style="color: #d84315;"><b>Out:</b></p>
 
 <pre style="background: #fddfdd; padding-top: 5px">
----------------------------------------------------------------------------
-ZeroDivisionError                         Traceback (most recent call last)
-Input In [5], in &lt;cell line: 2>()
-      1 # ZeroDivisionError
-----> 2 1 / 0
-
-
-ZeroDivisionError: division by zero</pre>
+---------------------------------------------------------------------------&#xA;ZeroDivisionError                         Traceback (most recent call last)&#xA;Input In [5], in &lt;cell line: 2>()&#xA;      1 # ZeroDivisionError&#xA;----> 2 1 / 0&#xA;&#xA;ZeroDivisionError: division by zero</pre>
 
 ## Other Examples
 
@@ -406,29 +227,7 @@ ShowMeMethods()
 <p style="color: #d84315;"><b>Out:</b></p>
 
 <pre style="background: #eaeef2; padding-top: 5px">
-_ipython_canary_method_should_not_exist_
-_ipython_display_
-_ipython_canary_method_should_not_exist_
-_repr_mimebundle_
-_ipython_canary_method_should_not_exist_
-_repr_html_
-_ipython_canary_method_should_not_exist_
-_repr_markdown_
-_ipython_canary_method_should_not_exist_
-_repr_svg_
-_ipython_canary_method_should_not_exist_
-_repr_png_
-_ipython_canary_method_should_not_exist_
-_repr_pdf_
-_ipython_canary_method_should_not_exist_
-_repr_jpeg_
-_ipython_canary_method_should_not_exist_
-_repr_latex_
-_ipython_canary_method_should_not_exist_
-_repr_json_
-_ipython_canary_method_should_not_exist_
-_repr_javascript_
-</pre>
+_ipython_canary_method_should_not_exist_&#xA;_ipython_display_&#xA;_ipython_canary_method_should_not_exist_&#xA;_repr_mimebundle_&#xA;_ipython_canary_method_should_not_exist_&#xA;_repr_html_&#xA;_ipython_canary_method_should_not_exist_&#xA;_repr_markdown_&#xA;_ipython_canary_method_should_not_exist_&#xA;_repr_svg_&#xA;_ipython_canary_method_should_not_exist_&#xA;_repr_png_&#xA;_ipython_canary_method_should_not_exist_&#xA;_repr_pdf_&#xA;_ipython_canary_method_should_not_exist_&#xA;_repr_jpeg_&#xA;_ipython_canary_method_should_not_exist_&#xA;_repr_latex_&#xA;_ipython_canary_method_should_not_exist_&#xA;_repr_json_&#xA;_ipython_canary_method_should_not_exist_&#xA;_repr_javascript_&#xA;</pre>
 
 <__main__.ShowMeMethods at 0x1e47ac0cb20>
 

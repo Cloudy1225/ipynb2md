@@ -179,6 +179,7 @@ class MarkdownCreator:
         prefix = '<pre style="background: %s; padding-top: 5px">\n' % background_color
         content = ''.join(text)
         content = re.sub('<', '&lt;', content)
+        content = re.sub('\n', '&#xA;', content)
         suffix = '</pre>'
         return prefix + content + suffix
 
@@ -201,6 +202,7 @@ class MarkdownCreator:
         prefix = '<pre style="background: %s; padding-top: 5px">\n' % background_color
         content = ''.join(traceback_str)
         content = re.sub('<', '&lt;', content)
+        content = re.sub('\n', '&#xA;', content)
         suffix = '</pre>'
         return prefix + content + suffix
 
@@ -219,7 +221,8 @@ class MarkdownCreator:
         s : str
             The markdown-syntax string of created block.
         """
-        return re.sub('\n{2,}', '\n', raw_html) + '\n'
+        return re.sub('\n', '&#xA;', raw_html) + '\n'
+        # return re.sub('\n{2,}', '\n', raw_html) + '\n'
 
     @staticmethod
     def create_image_block(image_path: str) -> str:
