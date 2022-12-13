@@ -14,7 +14,7 @@ You can see examples [here](example) . There are three markdown file in the exam
 - `example_nbconvert.md`: by [nbconvert](https://nbconvert.readthedocs.io/en/latest/index.html)
 - `eaxmple_vertopal.md`: by [vertopal](https://www.vertopal.com/)
 
-Since Github can not render markdown with color, you can copy the markdown raw code, and have a look on your own markdown renderer like VSCode.
+Since Github can not render markdown with color, you can copy the markdown raw code, and have a look on your own markdown renderer like VSCode or **directly visit [here](https://cloudy1225.github.io/blog/jupyter/ipynb2md-example.html)**.
 
 
 
